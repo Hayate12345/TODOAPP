@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.main_content {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main_content ul {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.main_content li {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.main_content a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main_content a:hover {
+  background-color: rgb(234, 234, 234);
+  padding-top: 10px;
+  padding: 15px 0;
+  padding-right: 50px;
+  border-radius: 5px;
+}
+
+.main_content {
+  position: sticky;
+  top: 50px;
+}
+
+.forms {
+  background-color: #f6f6f6;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+
+form {
+  background-color: white;
+  padding: 20px 50px;
+  margin-bottom: 30px;
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+.box .label-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 900px;
+  height: 300px;
+  resize: none;
+  font-size: 20px;
+}
+
+.box input {
+  margin-top: 20px;
+  transform: scale(2);
+  font-weight: bold;
+}
+
+.radiobutton1 {
+  margin-left: 50px;
+}
+
+.box1 {
+  margin-bottom: 50px;
+}
+
+.box1 .label-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.box1 input {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 150px;
+  color: black;
+  border-radius: 5px;
+}
+
+button:hover {
+  font-size: 20px;
+  border: none;
+  background-color: crimson;
+  padding: 15px 150px;
+  color: black;
+  border-radius: 5px;
+}

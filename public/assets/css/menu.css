@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.main_content {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main_content ul {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.main_content li {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.main_content a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main_content a:hover {
+  background-color: rgb(234, 234, 234);
+  padding-top: 10px;
+  padding: 15px 0;
+  padding-right: 50px;
+  border-radius: 5px;
+}
+
+.main_content {
+  position: sticky;
+  top: 50px;
+}
+
+.tasks {
+  background-color: #f6f6f6;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+
+.task {
+  background-color: white;
+  padding: 20px 50px;
+  margin-bottom: 30px;
+}
+
+.task_content {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+.limit {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.limit-check {
+  font-weight: bold;
+  font-size: 15px;
+  color: red;
+}
+
+.open {
+  cursor: pointer;
+  margin-left: 750px;
+}
+#pop-up {
+  display: none;
+}
+.overlay {
+  display: none;
+}
+#pop-up:checked + .overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+}
+.window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90vw;
+  max-width: 360px;
+  padding: 20px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+.close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+}
+
+.content-menu {
+  display: flex;
+}
+
+/* T_HAYATEの時 */
+.staff1 {
+  margin: 10px 0;
+  background-color: #88CCEE;
+  color: white;
+  font-weight: bold;
+  width: 85px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* T_SHOKIの時 */
+.staff2 {
+  margin: 10px 0;
+  background-color: #117733;
+  color: white;
+  font-weight: bold;
+  width: 72px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* T_SHOKIの時 */
+.staff3 {
+  margin: 10px 0;
+  background-color: #AA4499;
+  color: white;
+  font-weight: bold;
+  width: 85px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* T_SHOKIの時 */
+.staff4 {
+  margin: 10px 0;
+  background-color: #DDCC77;
+  color: white;
+  font-weight: bold;
+  width: 105px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area {
+  display: flex;
+  align-items: center;
+}
+
+.area .category1 {
+  margin-left: 20px;
+  background-color: #dc4301;
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category2 {
+  margin-left: 20px;
+  background-color: #0049d1;
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category3 {
+  margin-left: 20px;
+  background-color: #01c288;
+  color: white;
+  font-weight: bold;
+  width: 110px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category4 {
+  margin-left: 20px;
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  width: 45px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category5 {
+  margin-left: 20px;
+  background-color: #d18f01;
+  color: white;
+  font-weight: bold;
+  width: 75px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category6 {
+  margin-left: 20px;
+  background-color: #bcb200;
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category7 {
+  margin-left: 20px;
+  background-color: #FF4B00;
+  color: white;
+  font-weight: bold;
+  width: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category8 {
+  margin-left: 20px;
+  background-color: #005AFF;
+  color: white;
+  font-weight: bold;
+  width: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.area .category9 {
+  margin-left: 20px;
+  background-color: #03AF7A;
+  color: white;
+  font-weight: bold;
+  width: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.action a{
+  margin-left: 50px;
+  background-color: crimson;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
