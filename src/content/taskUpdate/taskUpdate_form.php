@@ -66,7 +66,7 @@ $result = $posts->fetch(PDO::FETCH_ASSOC);
                             <br>
                             <input id="radio1" required name="name_tag" type="radio" value="竹田颯" />　竹田颯
 
-                            <input id="radio2" class="radiobutton1" name="name_tag" type="radio" value="竹中翔貴" value="竹中翔貴" />　竹中翔貴
+                            <input id="radio2" class="radiobutton1" name="name_tag" type="radio" value="竹中翔貴" />　竹中翔貴
 
                             <input id="radio3" class="radiobutton1" name="name_tag" type="radio" value="矢田桂都" />　矢田桂都
 
