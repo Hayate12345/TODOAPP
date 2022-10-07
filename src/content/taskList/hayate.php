@@ -1,4 +1,12 @@
 <?php
+require_once '/Applications/MAMP/htdocs/Enjoy/PHP-QUIZ/src/function/login_check.php';
+session_start();
+
+// ログインチェック
+$result = login_check::checkLogin();
+if (!$result) {
+    header('Location: ../../login/login.php');
+}
 
 require_once '/Applications/MAMP/htdocs/Enjoy/PHP-QUIZ/src/function/db.php';
 
@@ -21,6 +29,7 @@ if ($page > 1) {
 } else {
     $start = 0;
 }
+
 
 // postsテーブルから10件のデータを取得する
 $sql = "SELECT * FROM task_all order by id desc LIMIT {$start}, 10";

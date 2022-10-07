@@ -2,6 +2,16 @@
 
 require_once '/Applications/MAMP/htdocs/Enjoy/PHP-QUIZ/src/function/db.php';
 
+require_once '/Applications/MAMP/htdocs/Enjoy/PHP-QUIZ/src/function/login_check.php';
+
+session_start();
+
+// ログインチェック
+$result = login_check::checkLogin();
+if (!$result){
+    header('Location: ../../login/login.php');
+}
+
 $db = connect();
 
 // 完了のステータスを判定

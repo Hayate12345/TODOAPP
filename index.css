@@ -1,4 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efefef;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  /* position: fixed; */
+  display: flex;
+  /* 繝倥ャ繝繝ｼ蝗ｺ螳壼喧 */
+}
+
+.img-con {
+  display: flex;
+}
+
+.img-con p {
+  margin: 35px 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 20px 0;
+  margin-left: 25px;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header li {
+  list-style: none;
+}
+
+.list1 {
+  margin: 35px 0;
+  font-weight: bold;
+}
+
+.list1 ul {
+  margin-left: 50px;
+}
+
+.list1 li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.list1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.list2 {
+  margin: 35px 0;
+}
+
+.list2 ul {
+  margin-left: 1020px;
+}
+
+.list2 li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.list2 a {
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+}
+
+.prim a {
+  color: white;
+  background-color: #313d57;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+.content {
+  background-image: url(https://previews.123rf.com/images/golubovystock/golubovystock1712/golubovystock171200513/91821588-%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E9%96%8B%E7%99%BA%E3%80%82%E3%83%96%E3%83%AC%E3%83%BC%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E4%BD%9C%E6%A5%AD%E3%80%82%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%96%E3%83%AC%E3%82%A4%E3%82%AF%E3%80%82%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%81%AA%E4%BA%BA%E3%80%85%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%80%82.jpg?fj=1);
+  width: 100%;
+  height: 727px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content::before {
+  content: '';
+  /* 竊捺囓縺�が繝ｼ繝舌�繝ｬ繧､繧貞濠騾乗�縺ｧ驟咲ｽｮ */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 竊灘�菴薙ｒ隕�≧繧医≧縺ｫ驟咲ｽｮ */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.content p {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  margin: 220px 205px;
+}
+
+.text2 {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin: 250px 200px;
+}
+
+.text3 {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin: 320px 195px;
+}
+
+.content a {
+  position: absolute;
+  margin: 420px 200px;
+  background-color: white;
+  padding: 15px 20px;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.content a:hover {
+  position: absolute;
+  margin: 420px 200px;
+  background-color: black;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
 }

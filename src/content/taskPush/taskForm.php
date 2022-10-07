@@ -1,3 +1,13 @@
+<?php
+session_start();
+require_once '/Applications/MAMP/htdocs/Enjoy/PHP-QUIZ/src/function/login_check.php';
+// ログインチェック
+$result = login_check::checkLogin();
+if (!$result) {
+    header('Location: ../../login/login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
