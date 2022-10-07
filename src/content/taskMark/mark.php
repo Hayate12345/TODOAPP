@@ -5,7 +5,7 @@ require_once '/Applications/MAMP/htdocs/Enjoy/PHP-QUIZ/src/function/db.php';
 $db = connect();
 
 // 完了のステータスを判定
-$key = '未完了';
+$key = 'マーク';
 
 // GETで現在のページ数を取得する（未入力の場合は1を挿入）
 if (isset($_GET['page'])) {
@@ -65,9 +65,6 @@ $pagination = ceil($page_num / 10);
     </div>
 
     <div class="wrap">
-
-
-
         <div class="main">
             <div class="main_content">
                 <?php include '/Applications/MAMP/htdocs/Enjoy/PHP-QUIZ/public/template/menu.html' ?>
@@ -78,12 +75,13 @@ $pagination = ceil($page_num / 10);
             <div class="side_content">
 
                 <div class="head">
-                    <h1>未完了タスク一覧</h1>
+                    <h1>マークしたタスク一覧</h1>
                 </div>
 
                 <div class="tasks">
                     <?php foreach ($result as $row) : ?>
-                        <?php if ($row['situation'] === $key) : ?>
+                        <!-- マークしたタスクのみ表示 -->
+                        <?php if ($row['ster'] === $key) : ?>
                             <?php $id = $row['id'] ?>
                             <div class="task">
                                 <?php
@@ -115,13 +113,8 @@ $pagination = ceil($page_num / 10);
                                         </summary>
 
                                         <div class="answer">
-                                            <?php if ($row['ster'] === 'マーク') : ?>
-                                                <a href="#" class="btn3">マーク済み</a>
-                                            <?php else : ?>
-                                                <a href="../taskMark/markPush.php?id=<?php echo $row['id'] ?>" class="btn3">マーク</a>
-                                            <?php endif; ?>
-
-                                            <a class="btn4" href="../finish/finishPush.php?id=<?php echo $row['id'] ?>">完了</a>
+                                            <!-- マークしているときのみかいじょボタンが出る -->
+                                            <a href="../taskMark/markReset.php?id=<?php echo $row['id'] ?>" class="btn3">マーク解除</a>
                                             <a href="../taskUpdate/taskUpdate_form.php?id=<?php echo $row['id'] ?>" class="btn1">編集</a>
                                             <a href="../taskDelete/delete.php?id=<?php echo $row['id'] ?>" class="btn2">削除</a>
                                         </div>

@@ -344,3 +344,27 @@ details[open] .answer {
   border-radius: 5px;
   text-decoration: none;
 }
+
+.answer .btn3 {
+  background-color: rgb(44, 185, 100);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.answer .btn4 {
+  background-color: rgb(185, 44, 147);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.head{
+  background-color: rgb(221, 221, 221);
+  padding: 20px 10px;
+  margin: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+}
