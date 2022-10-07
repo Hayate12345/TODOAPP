@@ -76,6 +76,7 @@ $pagination = ceil($page_num / 10);
                 <div class="tasks">
                     <?php foreach ($result as $row) : ?>
                         <?php if ($row['situation'] === $key) : ?>
+                            <?php $id = $row['id'] ?>
                             <div class="task">
                                 <?php
                                 // 今日の日付の取得
@@ -90,25 +91,29 @@ $pagination = ceil($page_num / 10);
                                 ?>
 
                                 <div class="content-menu">
-                                    <?php if ($limit === 'あと1日') : ?>
+                                    <!-- <?php if ($limit === 'あと1日') : ?>
                                         <p class="limit-check"><?php echo $limit ?></p>
                                     <?php else : ?>
                                         <p class="limit"><?php echo $limit ?></p>
-                                    <?php endif; ?>
+                                    <?php endif; ?> -->
 
-                                    <label class="open" for="pop-up"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABAklEQVRoge2ZQQ6CMBBFfzyF4okEruA17FrisdQNS72M4MYVLlpiJJhMG0uH8F/SdME0+a8QZjEAISSUEsAFwBNAl3i1LkvhK3FSEP7XqqQSpTvwAnAAkPneQgQyAAY2Uwcglxy6umITL1cwBjbbWVLcuuJNzESBrGGzNZLi/lvUymi+VYIgUaCINiiijRCRGvG7dz2FyBT85ffPPpISimiDItpYtAgbogdsiLOHItqgiDYWLcKG6AEb4uyhiDYooo0xkdbtGkZuQ7ZufwwfjInc3L6PFiecPtNdUlzgMww10PFmhsPQnfRghTSjZ8k6+t5CDjs9bRSEb1wW8ZsghHzzBhsrDRhqsjoQAAAAAElFTkSuQmCC"></label>
-                                    <input type="checkbox" id="pop-up">
-                                    <div class="overlay">
-                                        <div class="window">
-                                            <label class="close" for="pop-up"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABl0lEQVRoge2ZTU7DQAyFH9yBKJQT0fYKHAAOQNatOBZwAVjRBecgYcMqXcQRNJpGtucnFvKTRhMpdvK+TDLjaACXy6XVFsALgG8A/cKtIy8bKcSTAfPn2p4LsaWEHwCPAFbSp5BBKwANBk89gDUn6ZWCm3y+1GoweHvmBHcUfJ3TkVI1Bm8tJ3h8F60q6O9yASNZ5CDW5CDWlALkHkAVkV/RNZJLMv0+UOwBOpiKcnu6FkdsfxKQKwAfFP8J2SI6za2ZeVlAQoY4MFoIkT/Nyi6BiYEQ+dOWKByYWAiRv5haaw4mBYTIX2zRGIJJBSHyl6L6/TutHibHMWsOUBgEOB2FFCMxykQZf1HyZv5qkUIfdkwFoPaXcvqtZ85pYYoviKEPOwVM0RJlbnaKhSlWNHKm2BiYImW8ZJ3QwmQB+Tc/VkD5X93iJUoumShRsslBrMlBrCkE0lFvYcttqhvqv6YnQiBv1N9ls6PX6OmdE7zB72ZoAxsjM90MveUm7nF+e3jptpM+hTWG3dPWgPmWvLBHwuVyneoI9StbelnG+CQAAAAASUVORK5CYII="></label>
-                                            <div class="action">
-                                                <?php $id = $row['id']; ?>
-                                                <a href="#">編集</a>
-                                                <a href="../taskDelete/delete.php?id=<?php echo $id; ?>">削除</a>
-                                            </div>
+                                    <details>
+                                        <summary>
+                                            <?php if ($limit === 'あと1日') : ?>
+                                                <p class="limit-check"><?php echo $limit ?>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>
+                                            <?php else : ?>
+                                                <p class="limit"><?php echo $limit ?>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>
+                                            <?php endif; ?>
+                                        </summary>
+
+                                        <div class="answer">
+                                            <a href="../taskUpdate/taskUpdate_form.php?id=<?php echo $row['id'] ?>" class="btn1">編集</a>
+                                            <a href="../taskDelete/delete.php?id=<?php echo $row['id'] ?>" class="btn2">削除</a>
                                         </div>
-                                    </div>
+                                    </details>
                                 </div>
+
+
 
                                 <!-- 担当者ごとに表示を切り替える -->
                                 <div class="area">

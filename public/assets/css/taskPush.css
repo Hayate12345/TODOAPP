@@ -116,7 +116,6 @@ button {
 
 button:hover {
   font-size: 20px;
-  border: none;
   background-color: crimson;
   padding: 15px 150px;
   color: black;

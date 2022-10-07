@@ -131,7 +131,7 @@ body {
 /* T_HAYATEの時 */
 .staff1 {
   margin: 10px 0;
-  background-color: #88CCEE;
+  background-color: #88ccee;
   color: white;
   font-weight: bold;
   width: 85px;
@@ -155,7 +155,7 @@ body {
 /* T_SHOKIの時 */
 .staff3 {
   margin: 10px 0;
-  background-color: #AA4499;
+  background-color: #aa4499;
   color: white;
   font-weight: bold;
   width: 85px;
@@ -167,7 +167,7 @@ body {
 /* T_SHOKIの時 */
 .staff4 {
   margin: 10px 0;
-  background-color: #DDCC77;
+  background-color: #ddcc77;
   color: white;
   font-weight: bold;
   width: 105px;
@@ -249,7 +249,7 @@ body {
 
 .area .category7 {
   margin-left: 20px;
-  background-color: #FF4B00;
+  background-color: #ff4b00;
   color: white;
   font-weight: bold;
   width: 15px;
@@ -260,7 +260,7 @@ body {
 
 .area .category8 {
   margin-left: 20px;
-  background-color: #005AFF;
+  background-color: #005aff;
   color: white;
   font-weight: bold;
   width: 15px;
@@ -271,7 +271,7 @@ body {
 
 .area .category9 {
   margin-left: 20px;
-  background-color: #03AF7A;
+  background-color: #03af7a;
   color: white;
   font-weight: bold;
   width: 15px;
@@ -280,10 +280,67 @@ body {
   font-size: 15px;
 }
 
-.action a{
-  margin-left: 50px;
+summary {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 20px 70px 20px 30px;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:hover,
+details[open] summary {
+  background-color: #ececec;
+  border-radius: 5px;
+}
+
+summary::after {
+  content: '＋';
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
+  font-size: 30px;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+details[open] .answer {
+  animation: fadein 0.5s ease;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.answer {
+  padding: 10px 0;
+}
+
+.answer .btn1 {
+  background-color: rgb(43, 69, 186);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.answer .btn2 {
   background-color: crimson;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
+  text-decoration: none;
 }
