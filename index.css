@@ -33,7 +33,7 @@ body {
   height: 50px;
   border-radius: 50%;
   margin: 20px 0;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .header ul {
@@ -68,7 +68,7 @@ body {
 }
 
 .list2 ul {
-  margin-left: 1020px;
+  margin-left: 1175px;
 }
 
 .list2 li {
@@ -91,7 +91,7 @@ body {
 .content {
   background-image: url(https://previews.123rf.com/images/golubovystock/golubovystock1712/golubovystock171200513/91821588-%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E9%96%8B%E7%99%BA%E3%80%82%E3%83%96%E3%83%AC%E3%83%BC%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E4%BD%9C%E6%A5%AD%E3%80%82%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%96%E3%83%AC%E3%82%A4%E3%82%AF%E3%80%82%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%81%AA%E4%BA%BA%E3%80%85%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%80%82.jpg?fj=1);
   width: 100%;
-  height: 727px;
+  height: 784px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -114,7 +114,7 @@ body {
   position: absolute;
   font-size: 20px;
   color: white;
-  margin: 220px 205px;
+  margin: 270px 205px;
 }
 
 .text2 {
@@ -122,7 +122,7 @@ body {
   font-size: 50px;
   font-weight: bold;
   color: white;
-  margin: 250px 200px;
+  margin: 300px 200px;
 }
 
 .text3 {
@@ -130,12 +130,12 @@ body {
   font-size: 50px;
   font-weight: bold;
   color: white;
-  margin: 320px 195px;
+  margin: 370px 195px;
 }
 
 .content a {
   position: absolute;
-  margin: 420px 200px;
+  margin: 470px 200px;
   background-color: white;
   padding: 15px 20px;
   color: black;
@@ -145,7 +145,7 @@ body {
 
 .content a:hover {
   position: absolute;
-  margin: 420px 200px;
+  margin: 470px 200px;
   background-color: black;
   padding: 15px 20px;
   color: white;
