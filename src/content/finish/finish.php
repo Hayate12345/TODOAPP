@@ -50,17 +50,15 @@ $pagination = ceil($page_num / 10);
 
 <body>
     <div class="header">
-        <div class="logo">
-            logo
-        </div>
+        <div class="header">
+            <div class="img">
+                <img src="../../../public/assets/img/名称未設定-3.png" alt="">
+                <p>TaskFetch</p>
+            </div>
 
-        <div class="list">
-            <ul>
-                <li>icon</li>
-                <li>颯</li>
-            </ul>
-
-            <a href="#">ログアウト</a>
+            <div class="logout">
+                <a href="../../login/logout.php">ログアウト</a>
+            </div>
         </div>
     </div>
 
